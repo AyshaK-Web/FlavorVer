@@ -1,0 +1,724 @@
+{
+  "placeholderImages": [
+    {
+      "id": "spaghetti-carbonara",
+      "description": "A close-up shot of spaghetti carbonara in a white bowl.",
+      "imageUrl": "https://images.unsplash.com/photo-1633337474564-1d9478ca4e2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGFnaGV0dGklMjBjYXJib25hcmF8ZW58MHx8fHwxNzYyNjQyMTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "spaghetti carbonara"
+    },
+    {
+      "id": "vegan-curry",
+      "description": "A vibrant bowl of vegan chickpea and spinach curry.",
+      "imageUrl": "https://images.unsplash.com/photo-1582576163090-09d3b6f8a969?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx2ZWdhbiUyMGN1cnJ5fGVufDB8fHx8MTc2MjcxMjc5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "vegan curry"
+    },
+    {
+      "id": "gluten-free-pancakes",
+      "description": "A stack of fluffy gluten-free pancakes with berries and syrup.",
+      "imageUrl": "https://images.unsplash.com/photo-1585407698236-7a78cdb68dec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5jYWtlcyUyMGJlcnJpZXN8ZW58MHx8fHwxNzYyNjEzOTY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pancakes berries"
+    },
+    {
+      "id": "chicken-tacos",
+      "description": "Three delicious chicken tacos with fresh salsa and lime.",
+      "imageUrl": "https://images.unsplash.com/photo-1570461226513-e08b58a52c53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwdGFjb3N8ZW58MHx8fHwxNzYyNjI2MzkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken tacos"
+    },
+    {
+      "id": "tomato-soup",
+      "description": "A bowl of creamy tomato soup with basil garnish.",
+      "imageUrl": "https://images.unsplash.com/photo-1673021889619-0677506b56ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dG9tYXRvJTIwc291cHxlbnwwfHx8fDE3NjI2Nzg4NDh8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageHint": "tomato soup"
+    },
+    {
+      "id": "chocolate-cake",
+      "description": "A rich slice of chocolate layer cake on a plate.",
+      "imageUrl": "https://images.unsplash.com/photo-1586985289906-406988974504?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjaG9jb2xhdGUlMjBjYWtlfGVufDB8fHx8MTc2MjYyNDkwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chocolate cake"
+    },
+    {
+      "id": "beef-stir-fry",
+      "description": "A colorful beef stir-fry with broccoli and bell peppers.",
+      "imageUrl": "https://images.unsplash.com/photo-1759753969697-0339eb618939?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiZWVmJTIwc3Rpci1mcnl8ZW58MHx8fHwxNzYyNjg5ODMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beef stir-fry"
+    },
+    {
+      "id": "lemon-herb-roast-chicken",
+      "description": "A whole roasted chicken with lemon and herbs.",
+      "imageUrl": "https://images.unsplash.com/photo-1501200291289-c5a76c232e5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cm9hc3QlMjBjaGlja2VufGVufDB8fHx8MTc2MjY2MDI4M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "roast chicken"
+    },
+    {
+      "id": "vegetarian-lasagna",
+      "description": "A slice of vegetarian lasagna with spinach and ricotta.",
+      "imageUrl": "https://images.unsplash.com/photo-1614961909013-1e2212a2ca87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx2ZWdldGFyaWFuJTIwbGFzYWduYXxlbnwwfHx8fDE3NjI3MTMxMzh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "vegetarian lasagna"
+    },
+    {
+      "id": "salmon-with-asparagus",
+      "description": "Grilled salmon fillet with roasted asparagus.",
+      "imageUrl": "https://images.unsplash.com/photo-1676300185165-3f543c1fcb72?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxncmlsbGVkJTIwc2FsbW9ufGVufDB8fHx8MTc2MjY3ODk3M3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "grilled salmon"
+    },
+    {
+      "id": "mushroom-risotto",
+      "description": "Creamy mushroom risotto in a white bowl.",
+      "imageUrl": "https://images.unsplash.com/photo-1723476654474-77baaeb27012?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtdXNocm9vbSUyMHJpc290dG98ZW58MHx8fHwxNzYyNjI4ODY4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "mushroom risotto"
+    },
+    {
+      "id": "bbq-pulled-pork",
+      "description": "A BBQ pulled pork sandwich on a brioche bun.",
+      "imageUrl": "https://images.unsplash.com/photo-1445979323117-80453f573b71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwdWxsZWQlMjBwb3JrfGVufDB8fHx8MTc2MjY0OTkwNnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "pulled pork"
+    },
+    {
+      "id": "shrimp-scampi",
+      "description": "Shrimp scampi with pasta in a garlic butter sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1625943554275-826250826b2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzaHJpbXAlMjBzY2FtcGl8ZW58MHx8fHwxNzYyNzEzMTM4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "shrimp scampi"
+    },
+    {
+      "id": "butternut-squash-soup",
+      "description": "A bowl of creamy butternut squash soup.",
+      "imageUrl": "https://images.unsplash.com/photo-1665594051407-7385d281ad76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcXVhc2glMjBzb3VwfGVufDB8fHx8MTc2MjcxMzEzOHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "squash soup"
+    },
+    {
+      "id": "greek-salad",
+      "description": "A fresh Greek salad with feta cheese and olives.",
+      "imageUrl": "https://images.unsplash.com/photo-1599021419847-d8a7a6aba5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxncmVlayUyMHNhbGFkfGVufDB8fHx8MTc2MjYxNzg2OXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "greek salad"
+    },
+    {
+      "id": "chicken-alfredo",
+      "description": "Creamy chicken alfredo pasta.",
+      "imageUrl": "https://images.unsplash.com/photo-1673166513836-14f93e6f2c0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjaGlja2VuJTIwYWxmcmVkb3xlbnwwfHx8fDE3NjI2MTI0NzB8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken alfredo"
+    },
+    {
+      "id": "veggie-burgers",
+      "description": "Homemade veggie burgers on buns with lettuce and tomato.",
+      "imageUrl": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2ZWdnaWUlMjBidXJnZXJ8ZW58MHx8fHwxNzYyNjk2Njk0fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "veggie burger"
+    },
+    {
+      "id": "fish-and-chips",
+      "description": "Classic fish and chips with tartar sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1564091125222-b8bcc38c07ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmaXNoJTIwY2hpcHN8ZW58MHx8fHwxNzYyNjg4OTc1fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "fish chips"
+    },
+    {
+      "id": "shepherds-pie",
+      "description": "A comforting shepherd's pie with a mashed potato topping.",
+      "imageUrl": "https://images.unsplash.com/photo-1624466523137-e239e406c5a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGVwaGVyZHMlMjBwaWV8ZW58MHx8fHwxNzYyNjk5MTUwfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "shepherds pie"
+    },
+    {
+      "id": "pad-thai",
+      "description": "A plate of delicious Pad Thai with shrimp and peanuts.",
+      "imageUrl": "https://images.unsplash.com/photo-1637806931098-af30b519be53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwYWQlMjB0aGFpfGVufDB8fHx8MTc2MjY4ODk3NXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "pad thai"
+    },
+    {
+      "id": "beef-tacos",
+      "description": "Hard shell beef tacos with lettuce, cheese, and tomatoes.",
+      "imageUrl": "https://images.unsplash.com/photo-1598763773372-127da881eb84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YmVlZiUyMHRhY29zfGVufDB8fHx8MTc2MjcxMzEzOHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "beef tacos"
+    },
+    {
+      "id": "minestrone-soup",
+      "description": "A hearty bowl of minestrone soup with vegetables and pasta.",
+      "imageUrl": "https://images.unsplash.com/photo-1610565826403-0a8cecc8ce5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWluZXN0cm9uZSUyMHNvdXB8ZW58MHx8fHwxNzYyNzEzMTM4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "minestrone soup"
+    },
+    {
+      "id": "french-onion-soup",
+      "description": "French onion soup with a cheesy crouton topping.",
+      "imageUrl": "https://images.unsplash.com/photo-1711915408847-ae32b80a3fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8b25pb24lMjBzb3VwfGVufDB8fHx8MTc2MjYwMzUxMXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "onion soup"
+    },
+    {
+      "id": "chicken-parmesan",
+      "description": "Chicken parmesan with marinara sauce and melted mozzarella.",
+      "imageUrl": "https://images.unsplash.com/photo-1557861753-c47d68cf9425?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGlja2VuJTIwcGFybWVzYW58ZW58MHx8fHwxNzYyNzEzMTM4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken parmesan"
+    },
+    {
+      "id": "eggplant-parmesan",
+      "description": "Slices of eggplant parmesan layered with sauce and cheese.",
+      "imageUrl": "https://images.unsplash.com/photo-1615484477201-9f4953340fab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxlZ2dwbGFudCUyMHBhcm1lc2FufGVufDB8fHx8MTc2MjcxMzEzOHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "eggplant parmesan"
+    },
+    {
+      "id": "falafel-wrap",
+      "description": "A falafel wrap with hummus and vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1660541880691-604859c9c5bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmYWxhZmVsJTIwd3JhcHxlbnwwfHx8fDE3NjI2NDk5MDV8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "falafel wrap"
+    },
+    {
+      "id": "new-england-clam-chowder",
+      "description": "Creamy New England clam chowder in a bread bowl.",
+      "imageUrl": "https://images.unsplash.com/photo-1759728886965-da7fd4626b48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2xhbSUyMGNob3dkZXJ8ZW58MHx8fHwxNzYyNzEzMTM4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "clam chowder"
+    },
+    {
+      "id": "lobster-bisque",
+      "description": "A rich and creamy lobster bisque.",
+      "imageUrl": "https://images.unsplash.com/photo-1730698306944-544a5cb282e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb2JzdGVyJTIwYmlzcXVlfGVufDB8fHx8MTc2MjcxMzEzOHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "lobster bisque"
+    },
+    {
+      "id": "caesar-salad",
+      "description": "A classic Caesar salad with croutons and parmesan.",
+      "imageUrl": "https://images.unsplash.com/photo-1669283714145-f97867f6c238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjYWVzYXIlMjBzYWxhZHxlbnwwfHx8fDE3NjI2NzM5MjN8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "caesar salad"
+    },
+    {
+      "id": "cobb-salad",
+      "description": "A colorful Cobb salad with chicken, bacon, and egg.",
+      "imageUrl": "https://images.unsplash.com/photo-1667499745120-f9bcef8f584e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb2JiJTIwc2FsYWR8ZW58MHx8fHwxNzYyNzEzMTM4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "cobb salad"
+    },
+    {
+      "id": "beef-and-broccoli",
+      "description": "A plate of beef and broccoli with white rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1711360687751-d0cc9c952b49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZWVmJTIwYnJvY2NvbGl8ZW58MHx8fHwxNzYyNzEzMTM4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "beef broccoli"
+    },
+    {
+      "id": "general-tsos-chicken",
+      "description": "Sweet and spicy General Tso's chicken.",
+      "imageUrl": "https://images.unsplash.com/photo-1623046988680-9c90d790fead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnZW5lcmFsJTIwdHNvfGVufDB8fHx8MTc2MjYxNTE4MXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "general tso"
+    },
+    {
+      "id": "kung-pao-chicken",
+      "description": "Kung Pao chicken with peanuts and chili peppers.",
+      "imageUrl": "https://images.unsplash.com/photo-1623046988680-9c90d790fead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxrdW5nJTIwcGFvfGVufDB8fHx8MTc2MjcxMzEzOHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "kung pao"
+    },
+    {
+      "id": "avocado-toast",
+      "description": "Avocado toast with a poached egg on top.",
+      "imageUrl": "https://images.unsplash.com/photo-1650092194571-d3c1534562be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhdm9jYWRvJTIwdG9hc3R8ZW58MHx8fHwxNzYyNjk0NTI5fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "avocado toast"
+    },
+    {
+      "id": "mac-and-cheese",
+      "description": "A baked macaroni and cheese casserole.",
+      "imageUrl": "https://images.unsplash.com/photo-1548946522-4a313e8972a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYWMlMjBjaGVlc2V8ZW58MHx8fHwxNzYyNzEzMTM4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "mac cheese"
+    },
+    {
+      "id": "chili-con-carne",
+      "description": "A hearty bowl of chili con carne.",
+      "imageUrl": "https://images.unsplash.com/photo-1600180786608-28d06391d25c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaGlsaSUyMGNhcm5lfGVufDB8fHx8MTc2MjcxMzEzOHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "chili carne"
+    },
+    {
+      "id": "sushi-rolls",
+      "description": "An assortment of fresh sushi rolls.",
+      "imageUrl": "https://images.unsplash.com/photo-1712183718471-dab51f0748ac?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzdXNoaSUyMHJvbGxzfGVufDB8fHx8MTc2MjY3NzgzOXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "sushi rolls"
+    },
+    {
+      "id": "ramen-noodle-soup",
+      "description": "A steamy bowl of ramen noodle soup with an egg.",
+      "imageUrl": "https://images.unsplash.com/photo-1653697469211-ae71a516b99d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyYW1lbiUyMHNvdXB8ZW58MHx8fHwxNzYyNzEzMTM4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "ramen soup"
+    },
+    {
+      "id": "poke-bowl",
+      "description": "A fresh poke bowl with tuna and avocado.",
+      "imageUrl": "https://images.unsplash.com/photo-1670816978291-a5cf23d87968?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwb2tlJTIwYm93bHxlbnwwfHx8fDE3NjI2Mjg4Njl8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "poke bowl"
+    },
+    {
+      "id": "gyoza",
+      "description": "Pan-fried Japanese gyoza dumplings.",
+      "imageUrl": "https://images.unsplash.com/photo-1589047133481-02b4a5327d89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxneW96YSUyMGR1bXBsaW5nc3xlbnwwfHx8fDE3NjI1ODUzMDl8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "gyoza dumplings"
+    },
+    {
+      "id": "pho-bo",
+      "description": "A steaming bowl of Vietnamese Pho Bo with fresh herbs.",
+      "imageUrl": "https://images.unsplash.com/photo-1632770271587-9b244747a829?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwaG8lMjBib3xlbnwwfHx8fDE3MjE4MzI0MzF8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "pho bo"
+    },
+    {
+      "id": "moussaka",
+      "description": "A rich slice of Greek moussaka with a creamy béchamel topping.",
+      "imageUrl": "https://images.unsplash.com/photo-1601016024921-b13c78864c23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3Vzc2FrYXxlbnwwfHx8fDE3MjE4MzI0NjJ8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "moussaka"
+    },
+    {
+      "id": "feijoada",
+      "description": "A hearty bowl of Brazilian Feijoada served with rice and orange slices.",
+      "imageUrl": "https://images.unsplash.com/photo-1632223769190-639590e8ae41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmZWlqb2FkYXxlbnwwfHx8fDE3MjE4MzI0ODh8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "feijoada"
+    },
+    {
+      "id": "bibimbap",
+      "description": "A colorful bowl of Korean bibimbap with a fried egg on top.",
+      "imageUrl": "https://images.unsplash.com/photo-1600326145558-e2185015b6a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiaWJpbWJhcHxlbnwwfHx8fDE3MjE4MzI1MTB8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "bibimbap"
+    },
+    {
+      "id": "lomo-saltado",
+      "description": "A plate of Peruvian lomo saltado with beef, onions, tomatoes, and fries.",
+      "imageUrl": "https://images.unsplash.com/photo-1681966952802-536340ac729c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcm8lMjBzYWx0YWRvfGVufDB8fHx8MTcyMTgzMjUzM3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "lomo saltado"
+    },
+    {
+      "id": "paella",
+      "description": "A large paella pan filled with Spanish paella, garnished with lemon.",
+      "imageUrl": "https://images.unsplash.com/photo-1594212699903-8e2b41225a6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYWVsbGF8ZW58MHx8fHwxNzIxODMyNTU4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "paella"
+    },
+    {
+      "id": "chicken-tagine",
+      "description": "A traditional Moroccan chicken tagine with olives and preserved lemons.",
+      "imageUrl": "https://images.unsplash.com/photo-1625697523789-b007997aac6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwdGFnaW5lfGVufDB8fHx8MTcyMTgzMjU4Mnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken tagine"
+    },
+    {
+      "id": "thai-green-curry",
+      "description": "A bowl of vibrant Thai green curry with chicken and basil.",
+      "imageUrl": "https://images.unsplash.com/photo-1569420025988-49e9c3b697f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0aGFpJTIwZ3JlZW4lMjBjdXJyeXxlbnwwfHx8fDE3MjE4MzI2MDd8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "thai green curry"
+    },
+    {
+      "id": "jerk-chicken",
+      "description": "Grilled Jamaican jerk chicken with a charred exterior.",
+      "imageUrl": "https://images.unsplash.com/photo-1636224346766-9b5773199c0e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqZXJrJTIwY2hpY2tlbnxlbnwwfHx8fDE3MjE4MzI2Mjl8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "jerk chicken"
+    },
+    {
+      "id": "beef-stroganoff",
+      "description": "Creamy beef stroganoff served over egg noodles.",
+      "imageUrl": "https://images.unsplash.com/photo-1641883398967-84d41e21b2d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWVmJTIwc3Ryb2dhbm9mZnxlbnwwfHx8fDE3MjE4MzI2NTF8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "beef stroganoff"
+    },
+    {
+      "id": "doro-wat",
+      "description": "A deep red bowl of Ethiopian Doro Wat with a hard-boiled egg.",
+      "imageUrl": "https://images.unsplash.com/photo-1605335159355-635294577b31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkb3JvJTIwd2F0fGVufDB8fHx8MTcyMTgzMjY3NHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "doro wat"
+    },
+    {
+      "id": "tonkotsu-ramen",
+      "description": "A rich bowl of Japanese Tonkotsu ramen with chashu pork and a soft-boiled egg.",
+      "imageUrl": "https://images.unsplash.com/photo-1612929022026-b5d1e2e1329c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b25rb3RzdSUyMHJhbWVufGVufDB8fHx8MTcyMTgzMjY5Nnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "tonkotsu ramen"
+    },
+    {
+      "id": "butter-chicken",
+      "description": "Creamy Indian butter chicken in a bowl with a side of naan bread.",
+      "imageUrl": "https://images.unsplash.com/photo-1631292784018-c242f3de1b8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidXR0ZXIlMjBjaGlja2VufGVufDB8fHx8MTcyMTgzMjcyMXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "butter chicken"
+    },
+    {
+      "id": "moules-frites",
+      "description": "A pot of Belgian moules frites with a side of crispy french fries.",
+      "imageUrl": "https://images.unsplash.com/photo-1590429712745-f3769c73365f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3VsZXMlMjBmcml0ZXN8ZW58MHx8fHwxNzIxODMyNzQyfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "moules frites"
+    },
+    {
+      "id": "koshari",
+      "description": "A layered bowl of Egyptian Koshari topped with crispy onions.",
+      "imageUrl": "https://images.unsplash.com/photo-1698379963503-51a70014022c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxrb3NoYXJpfGVufDB8fHx8MTcyMTgzMjc2M3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "koshari"
+    },
+    {
+      "id": "laksa",
+      "description": "A spicy bowl of Malaysian laksa noodle soup with shrimp and egg.",
+      "imageUrl": "https://images.unsplash.com/photo-1626601416954-416045359265?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYWtzYXxlbnwwfHx8fDE3MjE4MzI3ODN8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "laksa"
+    },
+    {
+      "id": "chimichurri-steak",
+      "description": "Grilled steak sliced and topped with vibrant green chimichurri sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1633513298716-1f72e3a75877?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGltaWNodXJyaSUyMHN0ZWFrfGVufDB8fHx8MTcyMTgzMjgwNnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "chimichurri steak"
+    },
+    {
+      "id": "swedish-meatballs",
+      "description": "Swedish meatballs in creamy gravy, served with lingonberry jam.",
+      "imageUrl": "https://images.unsplash.com/photo-1598420443312-045b44383a15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzd2VkaXNoJTIwbWVhdGJhbGxzfGVufDB8fHx8MTcyMTgzMjgyN3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "swedish meatballs"
+    },
+    {
+      "id": "pide",
+      "description": "A boat-shaped Turkish pide with a meat filling.",
+      "imageUrl": "https://images.unsplash.com/photo-1601824147321-237000b4a46b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaWRlfGVufDB8fHx8MTcyMTgzMjg0OXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "pide"
+    },
+    {
+      "id": "mole-poblano",
+      "description": "Chicken smothered in dark, rich Mexican mole poblano sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1678772399229-410a8863a436?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb2xlJTIwcG9ibGFub3xlbnwwfHx8fDE3MjE4MzI4NzF8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "mole poblano"
+    },
+    {
+      "id": "tabbouleh",
+      "description": "A fresh bowl of Lebanese tabbouleh salad with lots of parsley.",
+      "imageUrl": "https://images.unsplash.com/photo-1623951722884-386b445a4944?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0YWJib3VsZWh8ZW58MHx8fHwxNzIxODMyODkzfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "tabbouleh"
+    },
+    {
+      "id": "rendang",
+      "description": "A rich, dark bowl of Indonesian beef rendang.",
+      "imageUrl": "https://images.unsplash.com/photo-1626601416954-416045359265?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyZW5kYW5nfGVufDB8fHx8MTcyMTgzMjkxNHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "rendang"
+    },
+    {
+      "id": "bobotie",
+      "description": "A baked South African bobotie with a golden egg custard topping.",
+      "imageUrl": "https://images.unsplash.com/photo-1674485689332-9d325708c9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHhib2JvdGllfGVufDB8fHx8MTcyMTgzMjkzNnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "bobotie"
+    },
+    {
+      "id": "wiener-schnitzel",
+      "description": "A crispy golden Wiener schnitzel served with a lemon wedge.",
+      "imageUrl": "https://images.unsplash.com/photo-1641883398967-84d41e21b2d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzY2huaXR6ZWx8ZW58MHx8fHwxNzIxODMyOTY0fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "wiener schnitzel"
+    },
+    {
+      "id": "sauerbraten",
+      "description": "Sliced German sauerbraten with a rich gravy.",
+      "imageUrl": "https://images.unsplash.com/photo-1628231888362-979f40ffb4a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYXVlcmJyYXRlbnxlbnwwfHx8fDE3MjE4MzI5ODV8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "sauerbraten"
+    },
+    {
+      "id": "poutine",
+      "description": "A messy, delicious pile of Canadian poutine with gravy and cheese curds.",
+      "imageUrl": "https://images.unsplash.com/photo-1574868014076-586369e4ca4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3V0aW5lfGVufDB8fHx8MTcyMTgzMzAwNnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "poutine"
+    },
+    {
+      "id": "colcannon",
+      "description": "A bowl of Irish colcannon mashed potatoes with a pat of butter melting in the center.",
+      "imageUrl": "https://images.unsplash.com/photo-1543321269-9e3223e74a81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xjYW5ub258ZW58MHx8fHwxNzIxODMzMDI4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "colcannon"
+    },
+    {
+      "id": "pierogi",
+      "description": "Pan-fried Polish pierogi topped with sour cream and bacon bits.",
+      "imageUrl": "https://images.unsplash.com/photo-1624466523137-e239e406c5a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaWVyb2dpfGVufDB8fHx8MTcyMTgzMzA0OXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "pierogi"
+    },
+    {
+      "id": "goulash",
+      "description": "A hearty bowl of Hungarian goulash soup.",
+      "imageUrl": "https://images.unsplash.com/photo-1634588279867-a870d067c343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb3VsYXNofGVufDB8fHx8MTcyMTgzMzA3Mnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "goulash"
+    },
+    {
+      "id": "ropa-vieja",
+      "description": "A plate of Cuban ropa vieja with rice and black beans.",
+      "imageUrl": "https://images.unsplash.com/photo-1640958799427-4a1b02534341?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyb3BhJTIwdmllamF8ZW58MHx8fHwxNzIxODMzMDk0fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "ropa vieja"
+    },
+    {
+      "id": "chicken-adobo",
+      "description": "Filipino chicken adobo simmering in a savory soy-vinegar sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1629542810991-9cb7e59a405a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwYWRvYm98ZW58MHx8fHwxNzIxODMzMTIwfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken adobo"
+    },
+    {
+      "id": "kimchi-jjigae",
+      "description": "A bubbling pot of spicy Korean kimchi jjigae.",
+      "imageUrl": "https://images.unsplash.com/photo-1597402611426-3c2292bed898?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraW1jaGklMjBqamlnYWV8ZW58MHx8fHwxNzIxODMzMTQyfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "kimchi jjigae"
+    },
+    {
+      "id": "ratatouille",
+      "description": "A beautifully arranged dish of French ratatouille.",
+      "imageUrl": "https://images.unsplash.com/photo-1598912803924-d368688435d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyYXRhdG91aWxsZXxlbnwwfHx8fDE3MjE4MzMxNjR8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "ratatouille"
+    },
+    {
+      "id": "osso-buco",
+      "description": "Italian osso buco served over creamy risotto.",
+      "imageUrl": "https://images.unsplash.com/photo-1624466523137-e239e406c5a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvJTIwYnVjY298ZW58MHx8fHwxNzIxODMzMTg1fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "osso buco"
+    },
+    {
+      "id": "banh-mi",
+      "description": "A crispy Vietnamese banh mi sandwich filled with meats and vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1695025983353-6110f10c38f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5oJTIwbWl8ZW58MHx8fHwxNzIxODMzMjA3fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "banh mi"
+    },
+    {
+      "id": "char-siu",
+      "description": "Sliced Chinese char siu pork with a glossy red glaze.",
+      "imageUrl": "https://images.unsplash.com/photo-1631292784018-c242f3de1b8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjaGFyJTIwc2l1fGVufDB8fHx8MTcyMTgzMzIzMnww&ixlib:rb-4.1son&q=80&w=1080",
+      "imageHint": "char siu"
+    },
+    {
+      "id": "gumbo",
+      "description": "A dark, rich bowl of Cajun gumbo served over rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1634588279867-a870d067c343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxndW1ib3xlbnwwfHx8fDE3MjE4MzMyNTR8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "gumbo"
+    },
+    {
+      "id": "spanakopita",
+      "description": "Golden, flaky triangles of Greek spanakopita.",
+      "imageUrl": "https://images.unsplash.com/photo-1629683838618-5085a6914c81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcGFuYWtvcGl0YXxlbnwwfHx8fDE3MjE4MzMyNzV8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "spanakopita"
+    },
+    {
+      "id": "aji-de-gallina",
+      "description": "Creamy Peruvian Aji de Gallina with chicken and walnuts.",
+      "imageUrl": "https://images.unsplash.com/photo-1658518974581-22453509b450?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhamklMjBkZSUyMGdhbGxpbmF8ZW58MHx8fHwxNzIxODMzMjk2fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "aji de gallina"
+    },
+    {
+      "id": "bulgogi",
+      "description": "Sizzling Korean bulgogi beef in a skillet.",
+      "imageUrl": "https://images.unsplash.com/photo-1626078297428-522f7783a758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidWxnb2dpfGVufDB8fHx8MTcyMTgzMzMyM3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "bulgogi"
+    },
+    {
+      "id": "hainanese-chicken-rice",
+      "description": "Succulent poached chicken served with fragrant rice.",
+      "imageUrl": "https://images.unsplash.com/photo-1631292784018-c242f3de1b8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYWluYW5lc2UlMjBjaGlja2VufGVufDB8fHx8MTcyMTgzMzM0NHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "hainanese chicken"
+    },
+    {
+      "id": "nasi-goreng",
+      "description": "Indonesian fried rice with a fried egg on top.",
+      "imageUrl": "https://images.unsplash.com/photo-1599406597284-399079a55252?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYXNpJTIwZ29yZW5nfGVufDB8fHx8MTcyMTgzMzM2Nnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "nasi goreng"
+    },
+    {
+      "id": "som-tum",
+      "description": "Spicy green papaya salad in a bowl.",
+      "imageUrl": "https://images.unsplash.com/photo-1598912803924-d368688435d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb20lMjB0dW18ZW58MHx8fHwxNzIxODMzMzg3fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "som tum"
+    },
+    {
+      "id": "borscht",
+      "description": "A vibrant red bowl of beet soup, borscht.",
+      "imageUrl": "https://images.unsplash.com/photo-1601016024921-b13c78864c23?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib3JzY2h0fGVufDB8fHx8MTcyMTgzMzQxMHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "borscht"
+    },
+    {
+      "id": "ceviche",
+      "description": "A refreshing bowl of Peruvian ceviche with corn.",
+      "imageUrl": "https://images.unsplash.com/photo-1628231888362-979f40ffb4a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjZXZpY2hlfGVufDB8fHx8MTcyMTgzMzQzMnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "ceviche"
+    },
+    {
+      "id": "arancini",
+      "description": "Golden fried Italian rice balls stuffed with cheese and ragu.",
+      "imageUrl": "https://images.unsplash.com/photo-1620921200928-a62967675f9e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmFuY2luaXxlbnwwfHx8fDE3MjE4MzM5MjV8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "fried rice balls"
+    },
+    {
+      "id": "bistecca-alla-fiorentina",
+      "description": "A thick-cut T-bone steak, grilled and seasoned simply, a Tuscan specialty.",
+      "imageUrl": "https://images.unsplash.com/photo-1598515214211-89d3c7373039?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiaXN0ZWNjYSUyMGFsbGElMjBmaW9yZW50aW5hfGVufDB8fHx8MTcyMTgzMzk0N3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "florence steak"
+    },
+    {
+      "id": "khachapuri",
+      "description": "A cheese-filled bread boat from Georgia, topped with a runny egg.",
+      "imageUrl": "https://images.unsplash.com/photo-1632770271587-9b244747a829?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHhraGFjaGFwdXJpfGVufDB8fHx8MTcyMTgzMzk2Nnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheese bread"
+    },
+    {
+      "id": "jollof-rice",
+      "description": "A popular West African one-pot rice dish with a rich, spiced tomato base.",
+      "imageUrl": "https://images.unsplash.com/photo-1698379963503-51a70014022c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqcmFmJTIwcmljZXxlbnwwfHx8fDE3MjE4MzM5ODR8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "jollof rice"
+    },
+    {
+      "id": "baklava",
+      "description": "A sweet dessert made of layers of phyllo filled with chopped nuts and sweetened with syrup or honey.",
+      "imageUrl": "https://images.unsplash.com/photo-1589047133481-02b4a5327d89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWtsYXZhfGVufDB8fHx8MTcyMTgzNDAwM3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "sweet pastry"
+    },
+    {
+      "id": "empanadas-tucumanas",
+      "description": "Baked empanadas filled with hand-cut beef.",
+      "imageUrl": "https://images.unsplash.com/photo-1623548989535-c3539f72b219?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbXBhbmFkYXN8ZW58MHx8fHwxNzIyMDIwNTcxfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "argentine empanadas"
+    },
+    {
+      "id": "arepas-reina-pepiada",
+      "description": "Cornmeal cakes filled with a creamy chicken and avocado salad.",
+      "imageUrl": "https://images.unsplash.com/photo-1635645422891-b92442435f37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcmVwYXN8ZW58MHx8fHwxNzIyMDIwNjAxfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "venezuelan arepas"
+    },
+    {
+      "id": "canja-de-galinha",
+      "description": "A simple and comforting Portuguese chicken and rice soup.",
+      "imageUrl": "https://images.unsplash.com/photo-1629683838618-5085a6914c81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlja2VuJTIwcmljZSUyMHNvdXB8ZW58MHx8fHwxNzIyMDIwNjI0fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "chicken soup"
+    },
+    {
+      "id": "french-cassoulet",
+      "description": "A rich, slow-cooked casserole with meat and white beans.",
+      "imageUrl": "https://images.unsplash.com/photo-1557861753-c47d68cf9425?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFuJTIwc3Rld3xlbnwwfHx8fDE3MjIwMjA2NDN8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "bean stew"
+    },
+    {
+      "id": "japanese-chawanmushi",
+      "description": "A savory steamed egg custard with various fillings.",
+      "imageUrl": "https://images.unsplash.com/photo-1598103442345-05514a3a5f70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzYXZvcnklMjBjdXN0YXJkfGVufDB8fHx8MTcyMDIwNjY4fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "savory custard"
+    },
+    {
+      "id": "indian-biryani",
+      "description": "A layered rice dish made with aromatic spices and marinated chicken.",
+      "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiaXJ5YW5pfGVufDB8fHx8MTcyMDIwNjkyfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "indian biryani"
+    },
+    {
+      "id": "italian-panna-cotta",
+      "description": "A simple Italian dessert of sweetened cream set with gelatin.",
+      "imageUrl": "https://images.unsplash.com/photo-1610482813959-1a5a816a7c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW5uYSUyMGNvdHRhfGVufDB8fHx8MTcyMDIwNzA5fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "panna cotta"
+    },
+    {
+      "id": "brazilian-pao-de-queijo",
+      "description": "A small, baked cheese roll, a popular snack in Brazil.",
+      "imageUrl": "https://images.unsplash.com/photo-1635332303088-a40093635467?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW8lMjBkZSUyMHF1ZWlqb3xlbnwwfHx8fDE3MjIwMjA3Mjh8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheese bread"
+    },
+    {
+      "id": "thai-tom-yum-goong",
+      "description": "A classic hot and sour Thai soup with shrimp.",
+      "imageUrl": "https://images.unsplash.com/photo-1579584379341-576d3331a742?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0b20lMjB5dW18ZW58MHx8fHwxNzIyMDIwNzQ5fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "tom yum"
+    },
+    {
+      "id": "korean-japchae",
+      "description": "A savory and slightly sweet dish of stir-fried glass noodles and vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1629813251399-2a95c93d567c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqYXBjaGFlfGVufDB8fHx8MTcyMDIwNzcxfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "korean noodles"
+    },
+    {
+      "id": "vietnamese-bun-cha",
+      "description": "Grilled Vietnamese pork patties over noodles.",
+      "imageUrl": "https://images.unsplash.com/photo-1569735172152-deff69a3b2a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxidW4lMjBjaGF8ZW58MHx8fHwxNzIyMDIwNzk5fDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "grilled pork noodles"
+    },
+    {
+      "id": "malaysian-char-kway-teow",
+      "description": "Stir-fried flat rice noodles with shrimp and sausage.",
+      "imageUrl": "https://images.unsplash.com/photo-1626078297428-522f7783a758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGFyJTIwa3dheSUyMHRlb3d8ZW58MHx8fHwxNzIyMDIwODIzfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "stir-fried noodles"
+    },
+    {
+      "id": "portuguese-bacalhau-a-bras",
+      "description": "Shredded salt cod with potatoes and eggs.",
+      "imageUrl": "https://images.unsplash.com/photo-1631103002087-0b040523093b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWNhbGhhdXxlbnwwfHx8fDE3MjIwMjA4NDF8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "salt cod"
+    },
+    {
+      "id": "brazilian-moqueca",
+      "description": "Brazilian fish stew with coconut milk and palm oil.",
+      "imageUrl": "https://images.unsplash.com/photo-1603133872878-3842415b3b1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtb3F1ZWNhfGVufDB8fHx8fDE3MjIwMjA4NjB8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "fish stew"
+    },
+    {
+      "id": "ethiopian-misir-wot",
+      "description": "Spicy Ethiopian red lentil stew.",
+      "imageUrl": "https://images.unsplash.com/photo-1574932918835-96c8c413725e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZWQlMjBsZW50aWwlMjBzdGV3fGVufDB8fHx8MTcyMjAyMDgyfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "lentil stew"
+    },
+    {
+      "id": "moroccan-harira",
+      "description": "A traditional Moroccan soup of tomato, lentils, and chickpeas.",
+      "imageUrl": "https://images.unsplash.com/photo-1634588279867-a870d067c343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYXJpcmElMjBzb3VwfGVufDB8fHx8MTcyMjAyMDkwN3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "moroccan soup"
+    },
+    {
+      "id": "russian-pelmeni",
+      "description": "Russian dumplings filled with minced meat, served with sour cream.",
+      "imageUrl": "https://images.unsplash.com/photo-1624466523137-e239e406c5a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkdW1wbGluZ3MlMjBzb3VwfGVufDB8fHx8MTcyMjAyMDkzM3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "russian dumplings"
+    },
+    {
+      "id": "spanish-gazpacho",
+      "description": "A cold Spanish soup made of raw, blended vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1625943554275-826250826b2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnMjBzb3VwfGVufDB8fHx8MTcyMjAyMDk1NHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "cold soup"
+    },
+    {
+      "id": "turkish-lahmacun",
+      "description": "A thin, crispy Turkish flatbread topped with minced meat and vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1601824147321-237000b4a46b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYWhtYWN1bnxlbnwwfHx8fDE3MjIwMjA5NzZ8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "turkish flatbread"
+    },
+    {
+      "id": "brazilian-coxinha",
+      "description": "A popular Brazilian snack of shredded chicken covered in dough and fried.",
+      "imageUrl": "https://images.unsplash.com/photo-1635332303088-a40093635467?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3hpbmhhfGVufDB8fHx8MTcyMjAyMDk5Nnww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "brazilian snack"
+    },
+    {
+      "id": "piri-piri-chicken",
+      "description": "Spicy grilled chicken marinated in piri-piri sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1629542810991-9cb7e59a405a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwaXJpJTIwcGlyaSUyMGNoaWNrZW58ZW58MHx8fHwxNzIyMDIxMDYxfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "piri-piri chicken"
+    },
+    {
+      "id": "singapore-chilli-crab",
+      "description": "Large crabs stir-fried in a sweet and spicy chili-tomato sauce.",
+      "imageUrl": "https://images.unsplash.com/photo-1590429712745-f3769c73365f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlsbGklMjBjcmFiJTIwc2F1Y2V8ZW58MHx8fHwxNzIyMDIxMDgzfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "chilli crab"
+    },
+    {
+      "id": "german-spaetzle",
+      "description": "Soft egg noodles tossed with cheese and topped with fried onions.",
+      "imageUrl": "https://images.unsplash.com/photo-1624466523137-e239e406c5a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjZGVlc2UlMjBub29kbGVzfGVufDB8fHx8MTcyMjAyMTEwNHww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheese noodles"
+    },
+    {
+      "id": "polish-zurek",
+      "description": "A sour rye soup with sausage and hard-boiled egg.",
+      "imageUrl": "https://images.unsplash.com/photo-1634588279867-a870d067c343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3VyJTIwc3VwfGVufDB8fHx8MTcyMjAyMTExOXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "sour soup"
+    },
+    {
+      "id": "haitian-griot",
+      "description": "Fried pork shoulder served with a spicy pickled vegetable relish.",
+      "imageUrl": "https://images.unsplash.com/photo-1626078297428-522f7783a758?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmlkJTIwcG9ya3xlbnwwfHx8fDE3MjIwMjExNDJ8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "fried pork"
+    },
+    {
+      "id": "colombian-bandeja-paisa",
+      "description": "A platter with red beans, rice, ground beef, chicharrón, chorizo, a fried egg, plantain, arepa, and avocado.",
+      "imageUrl": "https://images.unsplash.com/photo-1603133872878-3842415b3b1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2xvJTIwcGxhdHRlcnxlbnwwfHx8fDE3MjIwMjExNjR8MA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "colombian platter"
+    },
+    {
+      "id": "austrian-tafelspitz",
+      "description": "Boiled beef in broth, served with apple and horseradish.",
+      "imageUrl": "https://images.unsplash.com/photo-1628231888362-979f40ffb4a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2lsZWQlMjBiZWVmfGVufDB8fHx8MTcyMjAyMTE4NXww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "boiled beef"
+    },
+    {
+      "id": "filipino-kare-kare",
+      "description": "Oxtail stew in a rich peanut sauce with vegetables.",
+      "imageUrl": "https://images.unsplash.com/photo-1626601416954-416045359265?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvYXQlMjBzdGV3fGVufDB8fHx8MTcyMjAyMTIwN3ww&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "oxtail stew"
+    },
+    {
+      "id": "turkish-manti",
+      "description": "Tiny dumplings filled with meat, served with yogurt and spiced butter.",
+      "imageUrl": "https://images.unsplash.com/photo-1624466523137-e239e406c5a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx5b2d1cnQlMjBkdW1wbGluZ3N8ZW58MHx8fHwxNzIyMDIxMjMwfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "yogurt dumplings"
+    },
+    {
+      "id": "swiss-fondue",
+      "description": "Melted cheese served in a communal pot for dipping bread.",
+      "imageUrl": "https://images.unsplash.com/photo-1598420443312-045b44383a15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGVlc2UlMjBmb25kdWV8ZW58MHx8fHwxNzIyMDIxMjUxfDA&ixlib:rb-4.1.0&q=80&w=1080",
+      "imageHint": "cheese fondue"
+    }
+  ]
+}
