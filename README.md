@@ -62,5 +62,5 @@ The application will be available at `http://localhost:9002`.
 
 To explore user-specific features like favorites and badges, use the following demo credentials on the login page:
 
-- **Email**: `hafsa@gmail.com`
+- **Email**: `aysha@gmail.com`
 - **Password**: `123456`
